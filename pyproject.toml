@@ -21,6 +21,7 @@ dependencies = [
     'sympy',
     'scipy',
     'jax',
+    'ipykernel',
 ]
 classifiers = ["Intended Audience :: Science/Research"]
 dynamic = ["version"]
