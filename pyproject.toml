@@ -30,7 +30,7 @@ installer = "uv"
 python = "3.13"
 dependencies = ["ruff", "black", "ipython", "pyright", "pytest", "coverage"]
 [tool.hatch.envs.default.scripts]
-format = "black vlasovsolver tests run.py && ruff check --fix vlasovsolver tests run.py && ruff format vlasovsolver tests run.py" # hatch run format
+format = "black vlasovsolver tests 'Vlasov Solver.ipynb' && ruff check --fix vlasovsolver tests 'Vlasov Solver.ipynb' && ruff format vlasovsolver tests 'Vlasov Solver.ipynb'" # hatch run format
 lint = "ruff check"                                                                                                               # hatch run lint
 check-types = "pyright vlasovsolver tests run.py"                                                                                 # hatch run check-types
 test = "pytest"                                                                                                                   # hatch run test
